@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Screen Broken!</title>
+  <style>
+    body {
+      background: url('https://i.imgur.com/dQw4w9h.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    h1 {
+      animation: glitch 0.5s infinite;
+      text-shadow: 2px 2px red, -2px -2px blue;
+    }
+    @keyframes glitch {
+      0% { transform: translate(0, 0); }
+      33% { transform: translate(-5px, -5px); }
+      66% { transform: translate(5px, 5px); }
+      100% { transform: translate(0, 0); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Bạn đã bị troll!</h1>
+  <script>
+    setTimeout(() => alert("Chỉ là trò đùa thôi! 😜"), 5000);
+  </script>
+</body>
+</html>
